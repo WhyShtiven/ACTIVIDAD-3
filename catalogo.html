@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | EcoTienda Verde</title>
+  <link rel="stylesheet" href="../css/styles.css">
+
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🌱 EcoTienda Verde</div>
+  <nav class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html" class="active">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="login.html" class="btn-login">Ingresar</a>
+  </nav>
+</header>
+
+<section class="container">
+  <h2>Catálogo de Productos</h2>
+
+  <div class="filters">
+    <button onclick="filtrar('Todos')">Todos</button>
+    <button onclick="filtrar('Empaques')">Empaques</button>
+    <button onclick="filtrar('Limpieza')">Limpieza</button>
+    <button onclick="filtrar('Vajillas')">Vajillas</button>
+  </div>
+
+  <div id="productos" class="product-grid"></div>
+</section>
+
+<script src="js/catalogo.js"></script>
+</body>
+</html>

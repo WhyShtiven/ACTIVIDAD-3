@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | EcoTienda Verde</title>
+
+  <!-- CSS (ojo a la ruta) -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">🌱 EcoTienda Verde</div>
+  </header>
+
+  <!-- LOGIN -->
+  <main class="login-container">
+    <div class="login-card">
+      <h2>Iniciar sesión</h2>
+
+      <form onsubmit="loginDemo(event)">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="correo@ejemplo.com" required>
+
+        <label>Contraseña</label>
+        <input type="password" placeholder="••••••••" required>
+
+        <button type="submit">Ingresar</button>
+      </form>
+
+      <p class="login-demo">
+        💡 Modo demo: puedes usar cualquier correo y contraseña
+      </p>
+
+      <a href="index.html" class="back-link">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <script>
+    function loginDemo(e) {
+      e.preventDefault();
+      alert("Login de demostración exitoso 🌱");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
